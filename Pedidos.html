@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido de Comida Ambulante</title>
+    <link rel="stylesheet" href="styles2.css"> <!-- Enlace al archivo CSS -->
+    <script defer src="Pedidos.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Realizar Pedido</h1>
+        
+        <section class="form-section">
+            <form id="pedidoForm" class="pedido-form">
+                <div class="form-group">
+                    <label for="producto">Producto:</label>
+                    <select id="producto" name="producto" required>
+                        <option value="" disabled selected>Selecciona un producto</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad" min="1" required>
+                </div>
+                <button type="submit" class="btn">Hacer Pedido</button>
+            </form>
+        </section>
+        
+        <section class="stock-section">
+            <h2>Stock Disponible</h2>
+            <ul id="stockList">
+                
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
